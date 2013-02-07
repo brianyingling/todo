@@ -1,0 +1,11 @@
+<% @rows.each do |row| %>
+<div id="note">
+  <form method='post' action='/modify'>
+    <input type="hidden" name="id" value="<%= row['id'] %>" />
+    <h2 id="title" name="title"><%= row['title']%></h2>
+    <p id="description"><%= row['description']%></p>
+    <button>Delete</button>
+  </form>
+</div>
+<% end %>
+</form>
