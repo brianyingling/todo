@@ -1,5 +1,5 @@
 <% @rows.each do |row| %>
-<div id="note">
+<div class="note">
   <form method='post' action='/modify'>
     <input type="hidden" name="id" value="<%= row['id'] %>" />
     <h2 id="title" name="title"><%= row['title']%></h2>
@@ -8,4 +8,3 @@
   </form>
 </div>
 <% end %>
-</form>
